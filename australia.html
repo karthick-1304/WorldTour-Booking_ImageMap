@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="margin:20px;">
+    <header>
+        <h1>Australia</h1>
+    </header>
+
+    <main>
+        <p>Australia is famous for its natural wonders, stunning beaches, and vibrant cities like Sydney and Melbourne.</p>
+        <p class="here">Here are some famous things you must see:</p>
+        <ul>
+            <li>Visit the Sydney Opera House in Australia.</li>
+            <li>Explore the Great Barrier Reef.</li>
+            <li>See the iconic Uluru (Ayers Rock) in the Outback.</li>
+            <li>Enjoy the beaches of Gold Coast.</li>
+            <li>Take a walk through the Daintree Rainforest.</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Mode of Travel</th>
+                    <th>Transport Number</th>
+                    <th>Expected Days</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>07/01/2025</td>
+                    <td>10:00 AM</td>
+                    <td>Airplane</td>
+                    <td>AU101</td>
+                    <td>5 Days</td>
+                </tr>
+                <tr>
+                    <td>07/07/2025</td>
+                    <td>1:00 PM</td>
+                    <td>Train</td>
+                    <td>AU202</td>
+                    <td>4 Days</td>
+                </tr>
+                <tr>
+                    <td>07/14/2025</td>
+                    <td>9:00 AM</td>
+                    <td>Airplane</td>
+                    <td>AU303</td>
+                    <td>6 Days</td>
+                </tr>
+                <tr>
+                    <td>07/22/2025</td>
+                    <td>2:00 PM</td>
+                    <td>Ship</td>
+                    <td>AU404</td>
+                    <td>7 Days</td>
+                </tr>
+                <tr>
+                    <td>07/29/2025</td>
+                    <td>7:30 AM</td>
+                    <td>Train</td>
+                    <td>AU505</td>
+                    <td>3 Days</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <h3>Book Your Trip</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+            <label for="date">Preferred Travel Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time">
+            <label for="mode">Mode of Travel:</label>
+            <select id="mode" name="mode" style="max-width:600px;width:430px;">
+                <option value="airplane">Airplane</option>
+                <option value="ship">Ship</option>
+            </select>
+            <label for="transport-number">Transport Number:</label>
+            <input type="text" id="transport-number" name="transport-number" placeholder="Flight/Ship Number">
+            <fieldset style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+                <legend style="font-weight: bold; padding: 0 5px;">Luggage Weight</legend>
+                
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" id="weight1" name="luggage" value="less than 1" style="margin-right: 5px;">
+                    <label for="weight1">Less than 1 kg</label>
+                </div>
+                
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" id="weight5" name="luggage" value="less than 5" style="margin-right: 5px;">
+                    <label for="weight5">Less than 5 kg</label>
+                </div>
+                
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" id="weightMore" name="luggage" value="more than 5" style="margin-right: 5px;">
+                    <label for="weightMore">More than 5 kg</label>
+                </div>
+            </fieldset>
+            
+            
+            <label style="display: flex; flex-direction: column; align-items: flex-start;">
+                <div style="display: flex; align-items: center;">
+                <input  style="margin-bottom: 2px;" type="checkbox" id="terms" required> &nbsp;I&nbsp;read&nbsp;all&nbsp;the&nbsp;terms&nbsp;and&nbsp;conditions
+                </div>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p style="text-align: center; margin-top: 20px;">
+            <a href="index.html" style="color: #007BFF; text-decoration: none; font-size: 16px; font-weight: bold; padding: 10px 15px; border: 2px solid #007BFF; border-radius: 5px; transition: all 0.3s ease;">
+              Back to Map
+            </a>
+        </p>  
+    </footer>
+</body>
+</html>
